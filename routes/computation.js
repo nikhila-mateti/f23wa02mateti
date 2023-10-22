@@ -7,7 +7,7 @@ var  y = Math.random()
 router.get('/', function(req, res, next) {
     const pow = Math.pow(x,y)
     
-  res.render('computation', { title: 'Nikhila Mateti Bonus' },`${pow}`);
+  res.render('computation', { title: 'Nikhila Mateti Bonus' });
 });
 
 module.exports = router;
