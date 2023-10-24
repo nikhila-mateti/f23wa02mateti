@@ -13,7 +13,7 @@ router.get('/', function(req, res, next) {
     y = rand2
   }
   pow = Math.pow(x,y).toFixed(2)
-  trunc= Math.trunc(x).toFixed(2)
+  trunc= Math.trunc(x)
   tanh = Math.tanh(y).toFixed(2)
   sign = Math.sign(x).toFixed(2)
   res.send(`Math.pow(${x},${y}): ${pow} Math.trunc(${x}) is: ${trunc} Math.tanh(${y}) is : ${tanh} Math.sign(${x}) is : ${sign}`);
