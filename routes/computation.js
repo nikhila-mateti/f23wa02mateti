@@ -3,14 +3,10 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  var  rand = Math.random().toFixed(2)
-  var y = req.query.x;
-  if(y == undefined){
-
-    y =rand;
-
-  }
-  pow = Math.pow(rand,rand)
+  var  rand1 = Math.random().toFixed(2)
+  var rand2 = Math.random().toFixed(2)
+  
+  pow = Math.pow(rand1,rand2)
   res.send(`${pow}`);
 });
 
