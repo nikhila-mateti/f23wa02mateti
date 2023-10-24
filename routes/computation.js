@@ -6,9 +6,14 @@ var pow = Math.pow(x,y)
 var sinh = Math.sinh(x)
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  var  x = Math.random().toFixed(2)
-  var  y = Math.random().toFixed(2)
-  pow = Math.pow(x,y)
+  var  rand = Math.random().toFixed(2)
+  var y = req.query.x;
+  if(y == undefined){
+
+    y =rand;
+
+  }
+  pow = Math.pow(rand,rand)
   res.render(`${pow}`);
 });
 
