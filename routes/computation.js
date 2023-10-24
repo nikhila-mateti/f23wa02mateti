@@ -1,9 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var  x = Math.random()
-var  y = Math.random()
-var pow = Math.pow(x,y)
-var sinh = Math.sinh(x)
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   var  rand = Math.random().toFixed(2)
@@ -14,7 +11,7 @@ router.get('/', function(req, res, next) {
 
   }
   pow = Math.pow(rand,rand)
-  res.render(`${pow}`);
+  res.send(`${pow}`);
 });
 
 module.exports = router;
